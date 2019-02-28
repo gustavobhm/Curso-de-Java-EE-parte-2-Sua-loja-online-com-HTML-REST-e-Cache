@@ -9,7 +9,7 @@ public class CarrinhoItem {
 		this.livro = livro;
 		this.quantidade = 1;
 	}
-
+		
 	public Livro getLivro() {
 		return livro;
 	}
@@ -50,5 +50,4 @@ public class CarrinhoItem {
 			return false;
 		return true;
 	}
-
 }

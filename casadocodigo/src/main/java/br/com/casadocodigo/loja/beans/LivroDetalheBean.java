@@ -11,13 +11,13 @@ public class LivroDetalheBean {
 
 	@Inject
 	private LivroDao dao;
-
+	
 	private Livro livro;
-
+	
 	private Integer id;
-
-	public void carregarDetalhe() {
-		this.setLivro(dao.buscarPorId(id));
+	
+	public void carregaDetalhe() {
+		this.livro = dao.buscarPorId(id);
 	}
 
 	public Integer getId() {
@@ -35,5 +35,13 @@ public class LivroDetalheBean {
 	public void setLivro(Livro livro) {
 		this.livro = livro;
 	}
-
+	
 }
+
+
+
+
+
+
+
+
